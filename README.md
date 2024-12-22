@@ -57,42 +57,19 @@ We measure the following security metrics:
 ## Attack Maps  
 
 ### Before Hardening  
+- **NSG Allowed Inbound Malicious Flows**  
+  ![NSG Allowed Inbound Malicious Flows](images/malicious_flows.png)
 
-+---------------------------------------------+
-|        [World Map Image as background]     |
-|                                             |
-|        Red pins representing attacker       |
-|        IP addresses in different           |
-|        geolocations around the world        |
-|                                             |
-|   Title: "NSG Allowed Inbound Malicious     |
-|           Flows"                            |
-+---------------------------------------------+
+- **Linux Syslog Auth Failures**  
+  ![Linux Syslog Auth Failures](images/auth_failures_linux.png)
 
-+----------------------------------+
-|   SSH Auth Failures (Line Chart) |
-|  Y: # of Failures                |
-|  X: Timeline (hours or days)     |
-|                                  |
-|       *        *                |
-|         *     *                 |
-|           *  *                  |
-|            **                   |
-+----------------------------------+
-  
-+--------------------------------------------------+
-|  # of RDP/SMB Failures                           |
-|  (Y axis)                                        |
-|   60|  ████  (IP 1)                              |
-|   50|  ███   (IP 2)                              |
-|   40|  ██    (IP 3)                              |
-|   30|  █     (IP 4)                              |
-|   20|                                          |
-|   10|                                          |
-|    0|__________________________________________  (IPs)
-+--------------------------------------------------+
-    Title: "Windows RDP/SMB Auth Failures"
+- **Windows RDP/SMB Auth Failures**  
+  ![Windows RDP/SMB Auth Failures](images/auth_failures_windows.png)
 
+### After Hardening
+
+No malicious activity detected:
+![No Attacks Detected](images/attack_maps_after.png)
 
 ### After Hardening  
 
