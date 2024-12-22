@@ -58,9 +58,41 @@ We measure the following security metrics:
 
 ### Before Hardening  
 
-![NSG Allowed Inbound Malicious Flows](images/malicious_flows.png)  
-![Linux Syslog Auth Failures](images/auth_failures_linux.png)  
-![Windows RDP/SMB Auth Failures](images/auth_failures_windows.png)  
++---------------------------------------------+
+|        [World Map Image as background]     |
+|                                             |
+|        Red pins representing attacker       |
+|        IP addresses in different           |
+|        geolocations around the world        |
+|                                             |
+|   Title: "NSG Allowed Inbound Malicious     |
+|           Flows"                            |
++---------------------------------------------+
+
++----------------------------------+
+|   SSH Auth Failures (Line Chart) |
+|  Y: # of Failures                |
+|  X: Timeline (hours or days)     |
+|                                  |
+|       *        *                |
+|         *     *                 |
+|           *  *                  |
+|            **                   |
++----------------------------------+
+  
++--------------------------------------------------+
+|  # of RDP/SMB Failures                           |
+|  (Y axis)                                        |
+|   60|  ████  (IP 1)                              |
+|   50|  ███   (IP 2)                              |
+|   40|  ██    (IP 3)                              |
+|   30|  █     (IP 4)                              |
+|   20|                                          |
+|   10|                                          |
+|    0|__________________________________________  (IPs)
++--------------------------------------------------+
+    Title: "Windows RDP/SMB Auth Failures"
+
 
 ### After Hardening  
 
